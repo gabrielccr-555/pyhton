@@ -1,2 +1,2 @@
 # pyhton
-This repository is meant to host all my Python3 exercises
+This repository is meant to host all my Python3 projects.
