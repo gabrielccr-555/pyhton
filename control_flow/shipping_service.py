@@ -6,6 +6,7 @@ print('-=-'*20)
 print('We will assist you on picking the cheapest way to send your package!')
 print('-=-'*20)
 weight = float(input('Please, inform your package weight, in pounds: '))
+
 # Ground Shipping 🚛
 if weight <= 2:
     ground = weight * 1.5 + 20
@@ -15,8 +16,10 @@ elif 6 < weight <= 10:
     ground = weight * 4 + 20
 else:
     ground = weight * 4.75 + 20
+    
 # Ground Shipping Premium 🚛💨✨
 ground_P = 125
+
 # Drone Shipping 🚁
 if weight <= 2:
     drone = weight * 4.5
@@ -26,6 +29,7 @@ elif 6 < weight <= 10:
     drone = weight * 12
 else:
     drone = weight * 14.25
+    
 # Best Choice 👍
 if ground < ground_P and ground < drone:
     print('The cheapest choice is Ground Shipping')
